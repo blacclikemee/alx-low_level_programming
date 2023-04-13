@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "stddef.h"
 /**
  * _strchr - Function that looks for a particular value in a string
  * and return a pointer to it. Else, returna a null value
