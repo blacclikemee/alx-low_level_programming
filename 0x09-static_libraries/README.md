@@ -1,1 +1,1 @@
-C - Static libraries functions
+Codes for ALX Project on static libraries

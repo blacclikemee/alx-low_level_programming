@@ -1,1 +1,1 @@
-These are entry leve codes for the C program
+These are entry level codes for the C Program bing studied in the ALX Engineering Program.

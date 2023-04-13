@@ -1,29 +1,27 @@
 #include "main.h"
+
 /**
- * _strstr - Entry point
- * @haystack: input
- * @needle: input
- * Return: Always 0 (Success)
+ * _strstr - Function to return the suubsection of an array
+ * @haystack: The memory area to be checked for the subsection
+ * @needle: The pointer to the subsection to be checked in haystack
+ *
+ * Return: pointer to beginnning of needle
+ * in haystakc or NULL(if needle not found)
  */
+
 char *_strstr(char *haystack, char *needle)
 {
-	for (; *haystack != '\0'; haystack++)
+	while (*haystack != '\0')
 	{
-		char *l = haystack;
-		char *p = needle;
-
-
-		while (*l == *p && *p != '\0')
+		while (*needle != '\0' && *haystack == *needle)
 		{
-			l++;
-			p++;
+			haystack++;
+			needle++;
 		}
 
-
-		if (*p == '\0')
+		if (*needle == '\0')
 			return (haystack);
+		haystack++;
 	}
-
-
-	return (0);
+	return ("NULL");
 }

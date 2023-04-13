@@ -1,19 +1,22 @@
 #include "main.h"
+
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
- * Return: Always 0 (Success)
+ * _strchr - Function that looks for a particular value in a string
+ * and return a pointer to it. Else, returna a null value
+ * @s: Memory area to be searched for a specific value
+ * @c: character to be searched for
+ *
+ * Return: s(Pointer to the first valueof c) or null(if c is not found)
  */
+
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-
-
-	for (; s[i] >= '\0'; i++)
+	while (*s != '\0')
 	{
-		if (s[i] == c)
-			return (&s[i]);
+		if (*s == c)
+			return (s);
+		s++;
 	}
-	return (0);
+
+	return (NULL);
 }
